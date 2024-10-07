@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ceremonias {
+    margin: 20px 0;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos se envuelvan */
+    justify-content: space-between; /* Espacio entre los productos */
+}
+
+.producto {
+    flex: 1 1 calc(25% - 20px); /* 4 productos por fila, espacio incluido */
+    margin: 10px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%; /* La imagen se ajusta al contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+body {   
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebe1e1;
+    display: flex;
+    flex-direction: column; /* Alinear en columna */
+    min-height: 100vh; /* Para ocupar al menos la altura completa de la ventana */
+}
+
+.container {
+    flex: 1; /* Permite que el contenedor principal crezca para ocupar espacio */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+}
+
+header {
+    background-color: #bfc6db;
+    color: white;
+    padding: 5px 0; 
+    text-align: center;
+    width: 100%; 
+}
+
+.logo {
+    max-width: 30px; 
+    height: auto; 
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px;
+}
+
+.inicio, .suscripcion {
+    margin-bottom: 40px;
+}
+
+.inicio h2, .suscripcion h2 {
+    color: #7d7979;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #7d7979;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #7d7979;
+}
+
+.suscripcion form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscripcion input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 250px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px 0;
+    width: 100%; 
+}
+
+.telefono {
+    margin-top: -10px; 
+}
+
+.telefono a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold; 
+    display: block; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.telefono a:hover {
+    color: #7d7979; 
+    transform: scale(1.1); 
+}
+
+.redes {
+    margin-bottom: 10px; 
+}
+
+.redes a {
+    color: white;
+    margin: 0 3px;
+    font-size: 1.5em;
+}
+
+.redes a:hover {
+    color: #7d7979;
+}
+
+.carrusel {
+    display: flex; /* Usar flexbox para alinear imágenes en fila */
+    justify-content: space-between; /* Espaciado entre imágenes */
+    width: 100%; /* Ancho completo */
+    overflow: hidden; /* Oculta contenido desbordante */
+}
+
+.imagen-rotativa {
+    width: 23%; /* Cada imagen ocupará un 23% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Recorta la imagen para que todas tengan el mismo tamaño */
+    display: block; /* Asegura que se comporten como bloques */
+    transition: opacity 3s ease; /* Transición suave para la rotación */
+}
+
+/* Estilos específicos para el pie de página con suscripción y contacto */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1px;
+}
+
+.suscripcion {
+    max-width: 300px;
+}
+
+.suscripcion h4 {
+    font-size: 1.2em;
+}
+
+.suscripcion input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.suscripcion button {
+    padding: 10px;
+    background-color: #bfc6db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.suscripcion button:hover {
+    background-color: #999ea6;
+}
+
+.contacto {
+    text-align: right;
+}
+
+.contacto h4 {
+    font-size: 1.2em;
+}
+
+.contacto a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.contacto .redes a {
+    margin-right: 10px;
+}
+
+.contacto .redes a:hover {
+    color: #bfc6db;
+}
+
+.telefono a:hover {
+    color: #bfc6db;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .suscripcion, .contacto {
+        text-align: center;
+    }
+
+    .contacto {
+        margin-top: 20px;
+    }
+}
+.legal {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+}
+
+.legal p {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.legal a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.legal a:hover {
+    color: #7d7979;
+    text-decoration: underline;
+}
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #7a7aa3, #5a5a87);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Contact Form */
+.contact-form-container {
+    background-color: white;
+    padding: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1em;
+}
+
+textarea.input-field {
+    min-height: 150px;
+    resize: vertical;
+    resize: horizontal;
+}
+
+.submit-btn {
+    background-color: #7a7aa3;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #5a5a87;
+}
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #7a7aa3, #5a5a87);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #444; /* Background change on hover */
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+}
+
+.ceremonias {
+    text-align: center; /* Center align the section title */
+}
+
+.productos-container {
+    display: grid; /* Use grid layout for products */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between products */
+    margin-top: 20px; /* Margin above the product grid */
+}
+
+.producto {
+    background-color: white; /* White background for product boxes */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners apply to images */
+    text-align: center; /* Center align text inside product box */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.producto:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect on hover */
+}
+
+.producto img {
+    width: 100%; /* Full width of the product box */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.producto h3 {
+    font-size: 1.2em; /* Font size for product titles */
+    padding: 10px; /* Padding around titles */
+    color: #333; /* Title color */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .suscripcion, .contacto {
+        text-align: center;
+    }
+
+    .contacto {
+        margin-top: 20px;
+    }
+
+    .productos-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller columns on mobile */
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Asegura que el footer tenga un ancho del 100% */
+    position: relative; /* Asegura que el footer se posicione correctamente */
+    left: 0; /* Alineación a la izquierda */
+    right: 0; /* Alineación a la derecha */
+}
+
